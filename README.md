@@ -34,9 +34,4 @@ The CBIR system consists of the following components:
 
 ## Important Notes:
 
-- **Dataset Location:** The local Flickr dataset must be placed under the `dataset` directory.
-- **Index Creation:** Ensure mapping is defined correctly before creating indices in Elasticsearch.
-- **Feature Extraction:** Utilize ResNet50 for accurate feature extraction from images.
-- **Text-Based Search:** URLs are used as text-based search queries; ensure correct URL format.
 
-Thank you for using our CBIR system! If you encounter any issues or have questions, please refer to the documentation or contact our support team. Happy image searching!
