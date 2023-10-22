@@ -29,9 +29,9 @@ The CBIR system consists of the following components:
    - The dataset used is not  in this repo but it should be palaced here (locally ).
 
 ## Running the System
-- Run the CBIR system by executing the main script.
+- Run the CBIR system by executing the app.py script.
 - Use the provided search functionalities to perform content-based and text-based image searches.
 
-## Important Notes:
+
 
 
