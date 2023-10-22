@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CBIR</title>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+
+        <h1>Image Search Engine</h1>
+    </div>
+    <div class="container">
+        <div class="tags">
+            <div class="form_box">
+                <form action="/search" method="POST">
+                    <input type="text" name="search_query" placeholder="Search by text ...">                   
+                </form>
+            </div>
+        </div>
+    
+        <div class="images">
+            <div class="file-upload-box">
+                <form method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" accept=".jpg, .png" required>
+                    <div class="search_button"><button type="submit">Search</button></div>
+                </form>
+            </div>
+        </div>
+        
+    
+        {% if error %}
+        <p class="error-message">{{ error }}</p>
+        {% endif %}
+    
+        {% if image_path %}
+        <h2>Uploaded Image:</h2>
+        <img src="{{ image_path }}" width="300" alt="Uploaded Image">
+        {% endif %}
+    
+        {% if similar_images %}
+        <h2>Similar Images:</h2>
+        <div class="image-row">
+            {% for image in similar_images %}
+            <div class="image-container">
+                <img src="{{ url_for('serve_image', image_path=image) }}" width="300" alt="Similar Image">
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        
+        
+    
+        {% if res %}
+        <h2>Text Search Results:</h2>
+        <div class="text-search-results">
+            {% for hit in res['hits']['hits'] %}
+            <div class="search-result-item">
+                <img src="{{ 'http://farm' + hit["_source"]["flickr_farm"] + ".staticflickr.com/" +
+                hit["_source"]["flickr_server"] + "/" + hit["_source"]["id"] + "_" + hit["_source"]["flickr_secret"] +
+                ".jpg" }}" alt="Image">
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    
+        </div>
+        </div>
+    </div>
+   
+    <!-- {% if error %}
+    <p class="error-message">{{ error }}</p>
+    {% endif %}
+
+    {% if image_path %}
+    <h2>Uploaded Image:</h2>
+    <img src="{{ image_path }}" width="300" alt="Uploaded Image">
+
+    {% if similar_images %}
+    <h2>Similar Images:</h2>
+    <div class="image-row">
+        {% for image in similar_images %}
+        <div class="image-container">
+            <img src="{{ url_for('serve_image', image_path=image) }}" width="150" alt="Similar Image">
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>No similar images found.</p>
+    {% endif %}
+    {% endif %}-->
+</body>
+
+</html>
