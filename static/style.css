@@ -2,13 +2,18 @@ body {
     font-family: 'Abril Fatface', serif;
     margin: 0;
     padding: 0;
+<<<<<<< Updated upstream
     background-color: #d9d0e7;
+=======
+    background-color: #fff;
+>>>>>>> Stashed changes
       
 }
 .header {
     position: relative;
 }
 
+<<<<<<< Updated upstream
 .background-image {
     position: absolute;
     top: 0;
@@ -18,10 +23,14 @@ body {
     opacity: 0.8; /* Adjust the opacity level as needed */
     z-index: -1; /* Move the image behind the content */
 }
+=======
+
+>>>>>>> Stashed changes
 .container{
     margin-top:30px;
 }
 h1 {
+<<<<<<< Updated upstream
     color: #7227ed ;
     margin: 10px;
     padding: 30px;
@@ -31,6 +40,17 @@ h1 {
 }
 h2{
   color: #7227ed;
+=======
+    color:rgb(70, 98, 238);
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+h2{
+  color: black;
+>>>>>>> Stashed changes
   text-align: left;
   font-size: 20px;
   font-weight: 100;
@@ -57,9 +77,15 @@ h2{
 .form_box input,
 .file-upload-box input {
     width: 500px; /* Set the width of the input boxes as desired */
+<<<<<<< Updated upstream
     background: #fff;
     border-radius: 1px;
     box-shadow: 0px 0px 0px 6px rgba(255,255,255,0.3);
+=======
+    background: rgb(237, 235, 235);
+    border: 1px solid #000; /* 1px thin border */
+    border-radius: 5px;
+>>>>>>> Stashed changes
     padding: 10px;
     margin-right: 10px;
     font-size: 16px;
@@ -75,14 +101,24 @@ margin-top:20px;
  button{
     padding: 10px 20px;
     font-size: 16px;
+<<<<<<< Updated upstream
     background: #7227ed;
     border-radius: 6px;
+=======
+    background: rgb(70, 98, 238);
+    border-radius: 6px;
+    border:none
+>>>>>>> Stashed changes
     
 }
 .search_button button:hover,
 .search_button button:hover {
     /* Change the background color on hover */
+<<<<<<< Updated upstream
     background-color: rgb(223, 211, 235); 
+=======
+    background-color: rgb(99, 129, 251)
+>>>>>>> Stashed changes
 }
      
 .text-search-results,.image-row {
@@ -97,6 +133,7 @@ margin-top:20px;
            display: flex; 
            justify-content: center; 
            align-items: center;
+<<<<<<< Updated upstream
      }
      /* Align items vertically in the center */
 
@@ -155,3 +192,6 @@ button:hover {
     margin: 10px;
 }
 */
+=======
+     }
+>>>>>>> Stashed changes

@@ -112,5 +112,9 @@ def search():
     # Handle other cases (GET request, no search query, etc.)
     return render_template('index.html')
 if __name__ == '__main__':
+<<<<<<< Updated upstream
     app.run(debug=True)
 
+=======
+    app.run(debug=True)
+>>>>>>> Stashed changes
