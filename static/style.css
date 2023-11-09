@@ -1,0 +1,197 @@
+body {
+    font-family: 'Abril Fatface', serif;
+    margin: 0;
+    padding: 0;
+<<<<<<< Updated upstream
+    background-color: #d9d0e7;
+=======
+    background-color: #fff;
+>>>>>>> Stashed changes
+      
+}
+.header {
+    position: relative;
+}
+
+<<<<<<< Updated upstream
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8; /* Adjust the opacity level as needed */
+    z-index: -1; /* Move the image behind the content */
+}
+=======
+
+>>>>>>> Stashed changes
+.container{
+    margin-top:30px;
+}
+h1 {
+<<<<<<< Updated upstream
+    color: #7227ed ;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+h2{
+  color: #7227ed;
+=======
+    color:rgb(70, 98, 238);
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+h2{
+  color: black;
+>>>>>>> Stashed changes
+  text-align: left;
+  font-size: 20px;
+  font-weight: 100;
+
+}
+.tags,
+.images {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.form_box,
+.file-upload-box {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.form_box input,
+.file-upload-box input {
+    width: 500px; /* Set the width of the input boxes as desired */
+<<<<<<< Updated upstream
+    background: #fff;
+    border-radius: 1px;
+    box-shadow: 0px 0px 0px 6px rgba(255,255,255,0.3);
+=======
+    background: rgb(237, 235, 235);
+    border: 1px solid #000; /* 1px thin border */
+    border-radius: 5px;
+>>>>>>> Stashed changes
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    
+}
+.search_button
+{display: flex;
+justify-content: center;
+margin-top:20px;
+
+
+}
+ button{
+    padding: 10px 20px;
+    font-size: 16px;
+<<<<<<< Updated upstream
+    background: #7227ed;
+    border-radius: 6px;
+=======
+    background: rgb(70, 98, 238);
+    border-radius: 6px;
+    border:none
+>>>>>>> Stashed changes
+    
+}
+.search_button button:hover,
+.search_button button:hover {
+    /* Change the background color on hover */
+<<<<<<< Updated upstream
+    background-color: rgb(223, 211, 235); 
+=======
+    background-color: rgb(99, 129, 251)
+>>>>>>> Stashed changes
+}
+     
+.text-search-results,.image-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+   }
+   
+.search-result-item ,.image-container {
+           width: 100%; 
+           height: auto; 
+           display: flex; 
+           justify-content: center; 
+           align-items: center;
+<<<<<<< Updated upstream
+     }
+     /* Align items vertically in the center */
+
+/*.file-upload-box {
+    width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.file-upload-box input[type=file] {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #5c4b4b;
+    padding: 20px;
+}
+
+.file-upload-box button {
+    width: 20%;
+    padding: 10px 20px;
+    background-color: rgba(19, 75, 155, 0.745);
+    color: rgb(32, 31, 31);
+    border: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: rgba(153, 179, 215, 0.745);
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.uploaded-image {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.similar-images {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container {
+    margin: 10px;
+}
+*/
+=======
+     }
+>>>>>>> Stashed changes
