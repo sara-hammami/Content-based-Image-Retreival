@@ -1,4 +1,4 @@
-# Content-based-Image-Retreival
+# Content-Based-Image-Retreival
 
 Welcome to our Content-Based Image Retrieval (CBIR) project! This project is aimed at implementing a simple content-based image retrieval system using feature retrieval with ResNet50 as the backbone. The system is backed by Elasticsearch, providing efficient and powerful searching capabilities. Additionally, it offers text-based search functionality. Below are the instructions to set up and run the CBIR system.
 
